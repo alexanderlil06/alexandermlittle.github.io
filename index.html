@@ -3,36 +3,102 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Alexander M. Little</title>
+  <title>Alexander Little</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
   <style>
     body {
-      font-family: sans-serif;
+      font-family: 'Roboto', sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f5f5f5;
+      background: #f8f9fa;
       color: #333;
     }
     header {
+      background: #fefefe;
+      padding: 1rem 2rem;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: #2c3e50;
+    }
+    nav {
+      margin-top: 0.5rem;
+    }
+    nav a {
+      margin-right: 1.5rem;
+      text-decoration: none;
+      color: #2c3e50;
+      font-weight: bold;
+    }
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: url('https://via.placeholder.com/1200x300') center/cover no-repeat;
+      color: white;
+      padding: 4rem 2rem;
+      background-color: #2c3e50;
+    }
+    .hero-content {
+      max-width: 600px;
+    }
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    .btn {
       background: #2c3e50;
       color: white;
-      padding: 2rem;
-      text-align: center;
+      border: 2px solid white;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
     }
     section {
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
     }
-    h2 {
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 0.5rem;
-    }
-    .project {
+    h3 {
+      text-align: center;
       margin-bottom: 1rem;
+      color: #2c3e50;
+    }
+    .columns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: space-between;
+    }
+    .card {
+      background: white;
+      padding: 1.5rem;
+      flex: 1;
+      min-width: 250px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      border-radius: 6px;
+    }
+    .card ul {
+      padding-left: 1rem;
+    }
+    .contact {
+      text-align: center;
+    }
+    .contact a {
+      display: inline-block;
+      margin: 0.5rem;
+      text-decoration: none;
+      color: #2c3e50;
     }
     footer {
       text-align: center;
-      padding: 1rem;
+      padding: 2rem;
       font-size: 0.9rem;
       color: #777;
     }
@@ -41,39 +107,74 @@
 <body>
 
   <header>
-    <h1>Alexander M. Little</h1>
-    <p>Welcome to my personal site — Resume | Portfolio | Projects</p>
+    <h1>Alexander Little</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <section>
-    <h2>About Me</h2>
+  <div class="hero">
+    <div class="hero-content">
+      <h2>Aspiring Intelligence & Cybersecurity Professional</h2>
+      <p>ROTC Cadet | Applied Intelligence Major<br>Focused on national security & technology.</p>
+      <a class="btn" href="#">View My Resume</a>
+    </div>
+    <img src="https://via.placeholder.com/200" alt="Alexander in uniform" style="border-radius: 8px; max-height: 250px;">
+  </div>
+
+  <section id="about">
+    <h3>About Me</h3>
     <p>
-      I'm a student, creator, and aspiring professional with interests in [insert your interests here, e.g., software engineering, ROTC, design]. I built this site to share my work and journey.
+      I'm <strong>Alexander Little</strong>, an Applied Intelligence major and ROTC Cadet at Gannon University. Passionate about cybersecurity and national security, I aim to leverage data and technology to protect our nation’s interests.
     </p>
   </section>
 
-  <section>
-    <h2>Resume</h2>
-    <p><strong>Education:</strong> Gannon University (expected graduation year)</p>
-    <p><strong>Experience:</strong> [Add any job, internship, or leadership experiences]</p>
-    <p><strong>Skills:</strong> [List a few technical or soft skills]</p>
+  <section id="experience">
+    <h3>My Experience</h3>
+    <div class="columns">
+      <div class="card">
+        <ul>
+          <li>ROTC Color Guard Captain</li>
+          <li>ROTC Ranger Team Member</li>
+          <li>Server at Lakeshore Country Club</li>
+        </ul>
+        <a class="btn" href="#">View My Resume</a>
+      </div>
+
+      <div class="card">
+        <h4>Key Skills & Certifications</h4>
+        <ul>
+          <li>Cybersecurity & Threat Analysis</li>
+          <li>ArcGIS Pro Certified</li>
+          <li>OSINT & Data Analysis</li>
+        </ul>
+        <a class="btn" href="#">See My Skills</a>
+      </div>
+
+      <div class="card">
+        <h4>Community Involvement</h4>
+        <ul>
+          <li>10+ Local Clean-Up Projects</li>
+          <li>Volunteer at Farmers Markets</li>
+        </ul>
+        <a class="btn" href="#">Contact Me</a>
+      </div>
+    </div>
   </section>
 
-  <section>
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Project Name</h3>
-      <p>Description of what this project does and why it's cool.</p>
-      <a href="#">View project</a>
-    </div>
-    <div class="project">
-      <h3>Another Project</h3>
-      <p>Another awesome project — maybe a team project or class assignment.</p>
+  <section id="contact">
+    <h3>Get in Touch</h3>
+    <div class="contact">
+      <p><a href="mailto:alexander@alexandermlittle.com">📧 alexander@alexandermlittle.com</a></p>
+      <p><a href="https://linkedin.com/in/alexanderlittle" target="_blank">🔗 linkedin.com/in/alexanderlittle</a></p>
     </div>
   </section>
 
   <footer>
-    © 2026 Alexander M. Little | <a href="mailto:alexander@alexandermlittle.com">Email Me</a>
+    © 2026 Alexander M. Little | All rights reserved.
   </footer>
 
 </body>
