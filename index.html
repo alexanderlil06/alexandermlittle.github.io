@@ -3,110 +3,125 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Alexander Little</title>
+  <title>Alexander M. Little</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
       font-family: 'Roboto', sans-serif;
-      margin: 0;
-      background: #f8f9fa;
+      background: #f4f6f8;
       color: #333;
+      line-height: 1.6;
     }
+
     header {
-      background: #fefefe;
-      padding: 1rem 2rem;
-      box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+      background: #1f2937;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
     }
+
     header h1 {
-      margin: 0;
-      font-size: 2rem;
-      color: #2c3e50;
+      font-size: 2.5rem;
     }
+
     nav {
-      margin-top: 0.5rem;
+      margin-top: 1rem;
     }
+
     nav a {
-      margin-right: 1.5rem;
+      margin: 0 1rem;
+      color: #f9fafb;
       text-decoration: none;
-      color: #2c3e50;
-      font-weight: bold;
+      font-weight: 500;
     }
+
     .hero {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
       background: url('https://via.placeholder.com/1200x300') center/cover no-repeat;
       color: white;
+      text-align: center;
       padding: 4rem 2rem;
-      background-color: #2c3e50;
     }
-    .hero-content {
-      max-width: 600px;
-    }
+
     .hero h2 {
       font-size: 2rem;
-      margin-bottom: 0.5rem;
+      margin-bottom: 1rem;
     }
+
     .hero p {
       font-size: 1.2rem;
-      margin-bottom: 1rem;
     }
-    .btn {
-      background: #2c3e50;
-      color: white;
-      border: 2px solid white;
-      padding: 0.5rem 1rem;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 4px;
-    }
-    section {
-      max-width: 900px;
+
+    .container {
+      max-width: 1000px;
       margin: 2rem auto;
-      padding: 0 1rem;
+      padding: 1rem;
     }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
     h3 {
-      text-align: center;
       margin-bottom: 1rem;
-      color: #2c3e50;
+      font-size: 1.75rem;
+      color: #1f2937;
+      text-align: center;
     }
-    .columns {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      justify-content: space-between;
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
     }
+
     .card {
       background: white;
       padding: 1.5rem;
-      flex: 1;
-      min-width: 250px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.1);
-      border-radius: 6px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
+
+    .card h4 {
+      margin-bottom: 0.5rem;
+      color: #111827;
+    }
+
     .card ul {
-      padding-left: 1rem;
+      list-style-type: disc;
+      padding-left: 1.25rem;
     }
-    .contact {
+
+    .contact-links {
       text-align: center;
     }
-    .contact a {
+
+    .contact-links a {
       display: inline-block;
       margin: 0.5rem;
+      color: #1f2937;
       text-decoration: none;
-      color: #2c3e50;
+      font-weight: bold;
     }
+
     footer {
       text-align: center;
-      padding: 2rem;
+      padding: 2rem 1rem;
+      background: #e5e7eb;
+      color: #6b7280;
       font-size: 0.9rem;
-      color: #777;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Alexander Little</h1>
+    <h1>Alexander M. Little</h1>
     <nav>
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
@@ -115,65 +130,62 @@
     </nav>
   </header>
 
-  <div class="hero">
-    <div class="hero-content">
-      <h2>Aspiring Intelligence & Cybersecurity Professional</h2>
-      <p>ROTC Cadet | Applied Intelligence Major<br>Focused on national security & technology.</p>
-      <a class="btn" href="#">View My Resume</a>
-    </div>
-    <img src="https://via.placeholder.com/200" alt="Alexander in uniform" style="border-radius: 8px; max-height: 250px;">
-  </div>
-
-  <section id="about">
-    <h3>About Me</h3>
-    <p>
-      I'm <strong>Alexander Little</strong>, an Applied Intelligence major and ROTC Cadet at Gannon University. Passionate about cybersecurity and national security, I aim to leverage data and technology to protect our nation’s interests.
-    </p>
+  <section class="hero">
+    <h2>Aspiring Intelligence & Cybersecurity Professional</h2>
+    <p>ROTC Cadet | Applied Intelligence Major | Focused on national security & technology</p>
   </section>
 
-  <section id="experience">
-    <h3>My Experience</h3>
-    <div class="columns">
-      <div class="card">
-        <ul>
-          <li>ROTC Color Guard Captain</li>
-          <li>ROTC Ranger Team Member</li>
-          <li>Server at Lakeshore Country Club</li>
-        </ul>
-        <a class="btn" href="#">View My Resume</a>
-      </div>
+  <main class="container">
+    <section id="about">
+      <h3>About Me</h3>
+      <p>
+        I'm <strong>Alexander Little</strong>, an Applied Intelligence major and ROTC Cadet at Gannon University. 
+        Passionate about cybersecurity and national security, I aim to leverage data and technology to protect our nation’s interests.
+      </p>
+    </section>
 
-      <div class="card">
-        <h4>Key Skills & Certifications</h4>
-        <ul>
-          <li>Cybersecurity & Threat Analysis</li>
-          <li>ArcGIS Pro Certified</li>
-          <li>OSINT & Data Analysis</li>
-        </ul>
-        <a class="btn" href="#">See My Skills</a>
+    <section id="experience">
+      <h3>Experience</h3>
+      <div class="card-grid">
+        <div class="card">
+          <h4>Leadership</h4>
+          <ul>
+            <li>ROTC Color Guard Captain</li>
+            <li>ROTC Ranger Team Member</li>
+            <li>Server at Lakeshore Country Club</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>Certifications & Skills</h4>
+          <ul>
+            <li>Cybersecurity & Threat Analysis</li>
+            <li>ArcGIS Pro Certified</li>
+            <li>OSINT & Data Analysis</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>Community Involvement</h4>
+          <ul>
+            <li>10+ Local Clean-Up Projects</li>
+            <li>Volunteer at Farmers Markets</li>
+          </ul>
+        </div>
       </div>
+    </section>
 
-      <div class="card">
-        <h4>Community Involvement</h4>
-        <ul>
-          <li>10+ Local Clean-Up Projects</li>
-          <li>Volunteer at Farmers Markets</li>
-        </ul>
-        <a class="btn" href="#">Contact Me</a>
+    <section id="contact">
+      <h3>Get in Touch</h3>
+      <div class="contact-links">
+        <a href="mailto:alexander@alexandermlittle.com">📧 alexander@alexandermlittle.com</a>
+        <a href="https://www.linkedin.com/in/alexander-little-92566830b/" target="_blank">🔗 LinkedIn Profile</a>
       </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h3>Get in Touch</h3>
-    <div class="contact">
-      <p><a href="mailto:alexander@alexandermlittle.com">📧 alexander@alexandermlittle.com</a></p>
-      <p><a href="https://www.linkedin.com/in/alexander-little-92566830b/" target="_blank">🔗 linkedin.com/in/alexander-little-92566830b</a></p>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer>
     © 2026 Alexander M. Little | All rights reserved.
   </footer>
+
 </body>
 </html>
+
