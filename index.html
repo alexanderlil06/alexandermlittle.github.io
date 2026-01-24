@@ -3,24 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alexander Little | Portfolio</title>
+  <title>Alexander Little | Resume & Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
   <style>
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
+      padding: 0;
+    }
+    body {
       font-family: 'Inter', sans-serif;
       background: #f4f4f9;
       color: #333;
+      line-height: 1.6;
     }
     header {
-      background: linear-gradient(to right, #1f4037, #99f2c8);
+      background: linear-gradient(to right, #283e51, #485563);
       padding: 2rem;
       text-align: center;
       color: white;
     }
     header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
+      font-size: 2.8rem;
+    }
+    nav {
+      margin-top: 1rem;
     }
     nav a {
       margin: 0 1rem;
@@ -30,54 +37,48 @@
     }
     section {
       max-width: 1000px;
-      margin: 3rem auto;
+      margin: 2rem auto;
       padding: 2rem;
       background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
     h2 {
-      color: #1f4037;
-      border-bottom: 2px solid #eee;
+      color: #283e51;
+      border-bottom: 2px solid #ddd;
+      margin-bottom: 1rem;
       padding-bottom: 0.5rem;
     }
-    .grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.5rem;
+    ul {
+      padding-left: 1.2rem;
     }
     .card {
-      flex: 1 1 30%;
-      background: #fefefe;
-      padding: 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      margin-bottom: 1.5rem;
     }
     footer {
       text-align: center;
       padding: 2rem;
-      color: #888;
       font-size: 0.9rem;
+      color: #777;
     }
-    .btn {
+    a.button {
       display: inline-block;
       margin-top: 1rem;
-      padding: 0.5rem 1rem;
-      border-radius: 4px;
-      background: #1f4037;
+      padding: 0.6rem 1.2rem;
+      background: #283e51;
       color: white;
       text-decoration: none;
-      font-weight: bold;
+      border-radius: 4px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Alexander Little</h1>
+    <h1>Alexander M. Little</h1>
     <p>ROTC Cadet | Applied Intelligence Major | Cybersecurity Enthusiast</p>
     <nav>
       <a href="#about">About</a>
-      <a href="#experience">Experience</a>
+      <a href="#resume">Resume</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -86,64 +87,46 @@
   <section id="about">
     <h2>About Me</h2>
     <p>
-      I'm Alexander Little, a driven Applied Intelligence major and ROTC Cadet at Gannon University. My mission is to use data-driven intelligence and cybersecurity tools to protect and serve our nation. With a passion for national security, leadership, and problem-solving, I thrive at the intersection of technology and service.
+      I'm a motivated student at Gannon University majoring in Applied Intelligence. As an ROTC Cadet and Color Guard Captain, I blend leadership with service, and bring a passion for national security, problem-solving, and cybersecurity.
     </p>
   </section>
 
-  <section id="experience">
+  <section id="resume">
     <h2>Experience</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>ROTC Color Guard Captain</h3>
-        <p>Led ceremonial duties and oversaw team performance at official events.</p>
-      </div>
-      <div class="card">
-        <h3>ROTC Ranger Team</h3>
-        <p>Participated in high-intensity tactical training and leadership challenges.</p>
-      </div>
-      <div class="card">
-        <h3>Server at Lakeshore Country Club</h3>
-        <p>Maintained high service standards in fast-paced hospitality environment.</p>
-      </div>
+    <div class="card">
+      <h3>Color Guard Captain – ROTC</h3>
+      <p>Led ceremonial team at university and public events, ensuring professionalism and accuracy in military traditions.</p>
+    </div>
+    <div class="card">
+      <h3>Ranger Team – ROTC</h3>
+      <p>Participated in rigorous physical training, leadership challenges, and tactical exercises.</p>
+    </div>
+    <div class="card">
+      <h3>Server – Lakeshore Country Club</h3>
+      <p>Provided high-level hospitality service, coordinated events, and ensured client satisfaction in fast-paced settings.</p>
     </div>
   </section>
 
   <section id="skills">
     <h2>Skills & Certifications</h2>
-    <div class="grid">
-      <div class="card">
-        <ul>
-          <li>Cybersecurity & Threat Analysis</li>
-          <li>ArcGIS Pro Certified</li>
-          <li>OSINT & Data Analysis</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h4>Community</h4>
-        <ul>
-          <li>10+ Local Clean-Up Projects</li>
-          <li>Volunteer at Farmers Markets</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h4>Tools & Interests</h4>
-        <ul>
-          <li>Python, Excel, Power BI</li>
-          <li>Mapping & Geospatial Intelligence</li>
-          <li>Military History & Strategy</li>
-        </ul>
-      </div>
-    </div>
+    <ul>
+      <li>Cybersecurity & Threat Intelligence</li>
+      <li>ArcGIS Pro Certified</li>
+      <li>OSINT & Data Analysis</li>
+      <li>Python, Excel, Power BI</li>
+      <li>Geospatial Intelligence</li>
+      <li>Military History & Strategy</li>
+    </ul>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:alexander@alexandermlittle.com">alexander@alexandermlittle.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/alexanderlittle" target="_blank">linkedin.com/in/alexanderlittle</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/alexander-little-92566830b/" target="_blank">linkedin.com/in/alexander-little</a></p>
   </section>
 
   <footer>
-    © 2026 Alexander M. Little — Built with HTML & GitHub Pages
+    &copy; 2026 Alexander M. Little — Built with HTML & GitHub Pages
   </footer>
 </body>
 </html>
