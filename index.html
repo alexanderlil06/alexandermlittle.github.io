@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alexander Little | Resume & Portfolio</title>
+  <title>Alexander M. Little | Resume & Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
   <style>
     * {
@@ -11,129 +11,178 @@
       margin: 0;
       padding: 0;
     }
+
     body {
       font-family: 'Inter', sans-serif;
-      background: #f4f4f9;
-      color: #333;
+      background: #fff;
+      color: #222;
       line-height: 1.6;
     }
+
     header {
       background: linear-gradient(to right, #283e51, #485563);
-      padding: 2rem;
+      color: #fff;
+      padding: 2rem 1rem;
       text-align: center;
-      color: white;
     }
+
     header h1 {
-      font-size: 2.8rem;
+      font-size: 2.5rem;
     }
+
+    header p {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+    }
+
     nav {
       margin-top: 1rem;
     }
+
     nav a {
       margin: 0 1rem;
-      color: white;
+      color: #fff;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
     }
-    section {
-      max-width: 1000px;
+
+    main {
+      max-width: 960px;
       margin: 2rem auto;
-      padding: 2rem;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 1rem;
     }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
     h2 {
-      color: #283e51;
-      border-bottom: 2px solid #ddd;
+      font-size: 1.8rem;
       margin-bottom: 1rem;
+      color: #283e51;
+      border-bottom: 2px solid #eee;
       padding-bottom: 0.5rem;
     }
-    ul {
-      padding-left: 1.2rem;
-    }
-    .card {
-      margin-bottom: 1.5rem;
-    }
-    .card img, .about-image {
-      max-width: 100%;
-      height: auto;
+
+    .profile-img {
+      width: 100%;
+      max-width: 300px;
       border-radius: 8px;
-      margin-bottom: 1rem;
+      margin: 1rem 0;
     }
+
+    .card {
+      margin-bottom: 2rem;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 0.5rem;
+    }
+
+    ul {
+      padding-left: 1.25rem;
+      list-style-type: disc;
+    }
+
     footer {
       text-align: center;
-      padding: 2rem;
+      padding: 2rem 1rem;
       font-size: 0.9rem;
-      color: #777;
+      color: #666;
+      background-color: #f8f8f8;
     }
-    a.button {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.6rem 1.2rem;
-      background: #283e51;
-      color: white;
-      text-decoration: none;
-      border-radius: 4px;
+
+    a {
+      color: #0056b3;
+    }
+
+    a:hover,
+    a:focus {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+
+      .profile-img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+      }
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Alexander M. Little</h1>
     <p>ROTC Cadet | Applied Intelligence Major | Cybersecurity Enthusiast</p>
-    <nav>
+    <nav aria-label="Main Navigation">
       <a href="#about">About</a>
-      <a href="#resume">Experience</a>
+      <a href="#experience">Experience</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <img src="headshot_alexander_little.jpg" alt="Alexander Little Headshot" class="about-image" />
-    <p>
-      I'm a driven student at Gannon University majoring in Applied Intelligence. As an ROTC Cadet and Color Guard Captain, I’m passionate about national security, data analysis, and service. I’m actively pursuing internship and career opportunities that allow me to apply leadership, discipline, and technical skills to real-world challenges in cybersecurity and intelligence.
-    </p>
-  </section>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <img src="headshot.png" alt="Professional headshot of Alexander M. Little" class="profile-img" />
+      <p>
+        I'm a motivated student at Gannon University majoring in Applied Intelligence. As an ROTC Cadet and Color Guard Captain, I blend leadership with service, bringing a passion for national security, problem-solving, and cybersecurity.
+      </p>
+    </section>
 
-  <section id="resume">
-    <h2>Experience</h2>
-    <div class="card">
-      <h3>Color Guard Captain – ROTC</h3>
-      <p>Led ceremonial team at university and public events, ensuring professionalism and accuracy in military traditions.</p>
-    </div>
-    <div class="card">
-      <h3>Ranger Team – ROTC</h3>
-      <p>Participated in rigorous physical training, leadership challenges, and tactical exercises.</p>
-    </div>
-    <div class="card">
-      <h3>Server – Lakeshore Country Club</h3>
-      <p>Provided high-level hospitality service, coordinated events, and ensured client satisfaction in fast-paced settings.</p>
-    </div>
-  </section>
+    <section id="experience">
+      <h2>Experience</h2>
 
-  <section id="skills">
-    <h2>Skills & Certifications</h2>
-    <ul>
-      <li>Cybersecurity & Threat Intelligence</li>
-      <li>ArcGIS Pro Certified</li>
-      <li>OSINT & Data Analysis</li>
-      <li>Python, Excel, Power BI</li>
-      <li>Geospatial Intelligence</li>
-      <li>Military History & Strategy</li>
-    </ul>
-  </section>
+      <div class="card">
+        <img src="https://via.placeholder.com/800x200" alt="Color Guard Ceremony">
+        <h3>Color Guard Captain – ROTC</h3>
+        <p>Led ceremonial team at university and public events, ensuring professionalism and accuracy in military traditions.</p>
+      </div>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:alexander@alexandermlittle.com">alexander@alexandermlittle.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/alexander-little-92566830b/" target="_blank">linkedin.com/in/alexander-little</a></p>
-  </section>
+      <div class="card">
+        <img src="https://via.placeholder.com/800x200" alt="ROTC Ranger Team Training">
+        <h3>Ranger Team – ROTC</h3>
+        <p>Participated in rigorous physical training, leadership challenges, and tactical exercises.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://via.placeholder.com/800x200" alt="Lakeshore Country Club Event">
+        <h3>Server – Lakeshore Country Club</h3>
+        <p>Provided high-level hospitality service, coordinated events, and ensured client satisfaction in fast-paced settings.</p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills & Certifications</h2>
+      <ul>
+        <li>Cybersecurity & Threat Intelligence</li>
+        <li>ArcGIS Pro Certified</li>
+        <li>OSINT & Data Analysis</li>
+        <li>Python, Excel, Power BI</li>
+        <li>Geospatial Intelligence</li>
+        <li>Military History & Strategy</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:alexander@alexandermlittle.com">alexander@alexandermlittle.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/alexander-little-92566830b/" target="_blank" rel="noopener">linkedin.com/in/alexander-little</a></p>
+    </section>
+  </main>
 
   <footer>
     &copy; 2026 Alexander M. Little — Built with HTML & GitHub Pages
   </footer>
+
 </body>
 </html>
